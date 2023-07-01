@@ -1,0 +1,83 @@
+
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 98%;
+    background: var(--background-gray);
+    height: 40px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.search{
+    display: flex;
+    flex-grow: 0.2;  
+    height: 100%;  
+    column-gap: 5px;
+}
+.searchBox{
+    display: flex;
+    align-items: stretch;
+    padding: 1px;
+    border-radius: 1px;
+    width: 90%;
+    background-color: var(--hover-background-color);
+}
+#searchBar{
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    padding: 15px 10px;
+    background-color: var(--dark-gray);
+    color: white;
+}
+#search-icon{
+    width: 15%;
+    border: none;
+    background-color: var(--hover-background-color);
+}
+#searchBar:focus{
+    outline: none;
+}
+#searchBar::placeholder{
+    color: var(--font-light-gray);
+}
+
+
+
+.voiceInput{
+    width: 2.5em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.profileSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 200px;
+    width: 15%;
+}
+.profile{
+    width: 40px;
+    height: auto;
+}
+.profile > img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}

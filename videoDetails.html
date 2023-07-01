@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=512&id=19318&format=png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/nav.css">
+    <link rel="stylesheet" href="Styles/video-details.css">
+    <link rel="stylesheet" href="Styles/comment-section.css">
+    <link rel="stylesheet" href="Styles/recommend-section.css">
+    <script defer src="playVideo.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="menu">
+            <div id="hamburger">
+                <img src="resources/Navbar icons/hamburger-menu-icon.svg" alt="" srcset="">
+            </div>
+            <div id="logo">
+                <img src="resources/Navbar icons/youtube-logo-white.svg" alt="" srcset="">
+            </div>
+        </div>
+        <div class="search">
+            <div class="searchBox">
+                <input type="text" id="searchBar" placeholder="Search">
+                <button id="search-icon">
+                    <img src="resources/Navbar icons/search-bar-icon.svg" alt="">
+                </button>
+            </div>
+            <div class="voiceInput">
+                <img src="resources/Navbar icons/mic-icon.svg" alt="">
+            </div>
+        </div>
+        <div class="profileSection">
+            <div class="create"><img src="resources/Navbar icons/create-icon.svg" alt="" srcset=""></div>
+            <div class="apps"><img src="resources/Navbar icons/apps-icon.svg" alt=""></div>
+            <div class="notifications"><img src="resources/Navbar icons/notifications-icon.svg" alt=""></div>
+            <div class="profile"><img src="resources/user.png" alt=""></div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="wrapper">
+            <div class="video-content">
+                <div class="video">
+                    <iframe src="" id="videos-container" width="420" height="315" frameborder="0" fullscreen="true"></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="video-stats">
+                        <div class="title" id="video-title"></div>
+                        <div class="other-details">
+                            <div class="left">
+                                <div class="views" id="video-views"></div>
+                                <div class="date">Oct 8, 2021</div>
+                            </div>
+                            <div class="right">
+                                <div class="likes">
+                                    <img src="resources/videoDetails/like-icon.svg" alt="">
+                                    <span id="like-count"></span>
+                                </div>
+                                <div class="dislikes">
+                                    <img src="resources/videoDetails/dislike-icon.svg" alt="">
+                                </div>
+                                <div class="share">
+                                    <img src="resources/videoDetails/share-icon.svg" alt="">
+                                    <span>SHARE</span>
+                                </div>
+                                <div class="save"><img src="resources/videoDetails/save-icon.svg" alt="">
+                                    <span>SAVE</span>
+                                </div>
+                                <div class="more"><img src="resources/videoDetails/more-icon.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-box">
+                        <div class="channel-details">
+                            <div class="channel-title">
+                                <div class="channel-img"><img src="resources/videoDetails/User-Avatar.svg" alt=""></div>
+                                <div class="channel-name">
+                                    <div class="name" id="channel-name"></div>
+                                    <div class="subscribers-count">1.2M subscribers</div>
+                                </div>
+                            </div>
+                            <button type="button" id="subscribe-btn">SUBSCRIBE</button>
+                        </div>
+                        <div class="video-description" id="video-description">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-section">
+                    <div class="top">
+                        <div class="info">
+                            <div class="comments-count" id="comments-count"></div>
+                            <button type="button" id="sort">
+                                <img src="resources/videoDetails/sort-icon.svg" alt="">
+                                SORT BY
+                            </button>
+                        </div>
+                        <div class="add-comment">
+                            <div class="dp">
+                                <img src="resources/user.png" alt="">
+                            </div>
+                            <input type="text" name="comment" id="comment-field" placeholder="Add a public comment...">
+                        </div>
+                    </div>
+                    <div id="comments"></div>
+                </div>
+            </div>
+            <div class="recommend-section">
+                <div class="filter">
+                    <div class="item all">All</div>
+                    <div class="item">Item</div>
+                    <div class="item">Item</div>
+                    <div class="item">Item</div>
+                </div>
+                <div class="videos" id="recommend-videos-container">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=512&id=19318&format=png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/nav.css">
+    <link rel="stylesheet" href="Styles/sidebar.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="menu">
+            <div id="hamburger">
+                <img src="resources/Navbar icons/hamburger-menu-icon.svg" alt="" srcset="">
+            </div>
+            <div id="logo">
+                <img src="resources/Navbar icons/youtube-logo-white.svg" alt="" srcset="">
+            </div>
+        </div>
+        <div class="search">
+            <div class="searchBox">
+                <input type="text" id="searchBar" placeholder="Search">
+                <button id="search-icon" onclick="search()">
+                    <img src="resources/Navbar icons/search-bar-icon.svg" alt="">
+                </button>
+            </div>
+            <div class="voiceInput">
+                <img src="resources/Navbar icons/mic-icon.svg" alt="">
+            </div>
+        </div>
+        <div class="profileSection">
+            <div class="create"><img src="resources/Navbar icons/create-icon.svg" alt="" srcset=""></div>
+            <div class="apps"><img src="resources/Navbar icons/apps-icon.svg" alt=""></div>
+            <div class="notifications"><img src="resources/Navbar icons/notifications-icon.svg" alt=""></div>
+            <div class="profile"><img src="resources/user.png" alt=""></div>
+        </div>
+    </nav>
+
+    <aside>
+        <div id="sideBar">
+            <div class="section">
+                <div class="item">
+                    <div class="icon"><img src="resources/Sidebar icons/home-icon.svg" alt=""></div>
+                    <div class="title">Home</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><img src="resources/Sidebar icons/explore-icon.svg" alt=""></div>
+                    <div class="title">Explore</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><img src="resources/Sidebar icons/subscriptions-icon.svg" alt=""></div>
+                    <div class="title">Subscriptions</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="item">
+                    <div class="icon"><img src="resources/Sidebar icons/library-icon.svg" alt=""></div>
+                    <div class="title">Library</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><img src="resources/Sidebar icons/history-icon.svg" alt=""></div>
+                    <div class="title">History</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><img src="resources/Sidebar icons/yourVideos-icon.svg" alt=""></div>
+                    <div class="title">Your Videos</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><img src="resources/Sidebar icons/watchLater-icon.svg" alt=""></div>
+                    <div class="title">Watch Later</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><img src="resources/Sidebar icons/liked-icon.svg" alt=""></div>
+                    <div class="title">Liked Videos</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><img src="resources/Sidebar icons/arrowBottom-icon.svg" alt=""></div>
+                    <div class="title">Show More</div>
+                </div>
+            </div>
+            <div class="section subscriptions">
+                <div class="section-title">
+                    <img src="resources/Sidebar icons/subscriptions-section-title.svg" alt="">
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/user.png" alt="">
+                    </div>
+                    <div class="title">Channel Name</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/user.png" alt="">
+                    </div>
+                    <div class="title">Channel Name</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/user.png" alt="">
+                    </div>
+                    <div class="title">Channel Name</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/user.png" alt="">
+                    </div>
+                    <div class="title">Channel Name</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/user.png" alt="">
+                    </div>
+                    <div class="title">Channel Name</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/user.png" alt="">
+                    </div>
+                    <div class="title">Channel Name</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/user.png" alt="">
+                    </div>
+                    <div class="title">Channel Name</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><img src="resources/Sidebar icons/arrowBottom-icon.svg" alt=""></div>
+                    <div class="title">Show More</div>
+                </div>
+            </div>
+            <div class="section more">
+                <div class="item section-title">
+                    <img src="resources/Sidebar icons/more-section-title.svg" alt="">
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/Sidebar icons/yt-premium-icon.svg" alt="">
+                    </div>
+                    <div class="title">Youtube Premium</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/Sidebar icons/gaming-icon.svg" alt="">
+                    </div>
+                    <div class="title">Gaming</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/Sidebar icons/live-icon.svg" alt="">
+                    </div>
+                    <div class="title">Live</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/Sidebar icons/sports-icon.svg" alt="">
+                    </div>
+                    <div class="title">Sports</div>
+                </div>
+            </div>
+            <div class="section more">
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/Sidebar icons/settings-icon.svg" alt="">
+                    </div>
+                    <div class="title">Settings</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/Sidebar icons/report-icon.svg" alt="">
+                    </div>
+                    <div class="title">Report history</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/Sidebar icons/Help-icon.svg" alt="">
+                    </div>
+                    <div class="title">Help</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/Sidebar icons/feedback-icon.svg" alt="">
+                    </div>
+                    <div class="title">Send feedback</div>
+                </div>
+            </div>
+            <div class="section footer">
+                <div class="item">
+                    <div class="icon">
+                        <img src="resources/Sidebar icons/Footer.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <div class="wrapper">
+            <div class="filter-row">
+                <button type="button" class="item">All</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+                <button type="button" class="item">Item</button>
+            </div>
+            <div id="videos-container">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,66 @@
+.recommend-section{
+    width: 40%;
+}
+.recommend-section .video .thumbnail{
+    max-width: 170px;
+    max-height: 95px;
+}
+.recommend-section .video .thumbnail > img{
+    max-width: 170px;
+    max-height: 95px;
+}
+.recommend-section > .filter{
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 0px;
+}
+.recommend-section > .filter > .item{
+    border: 1px solid #7c7c7c;
+    background-color: var(--border-gray);
+    padding: 8px 12px;
+    border-radius: 32px;
+}
+.recommend-section > .filter > .all{
+    background-color: white;
+    color: #030303;
+}
+
+.recommend-section > .filter > .all,
+.video > .details > .title{
+    font-weight: 400;
+    font-size: 14px;
+}
+.recommend-section > .videos > .video{
+    display: flex;
+    column-gap: 10px;
+    padding-top: 10px;
+}
+.recommend-section .video > .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.recommend-section .video > .thumbnail{
+    width: 100%;
+    height: auto;
+}
+.recommend-section .video > .thumbnail > img{
+    width: 100%;
+    height: auto;
+}
+.recommend-section .details > .video-info *{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--font-light-gray);
+}
+
+.recommend-section .details > .video-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+.recommend-section .details .video-info > .stats{
+    display: flex;
+    column-gap: 10px;
+}

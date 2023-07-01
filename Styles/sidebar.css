@@ -1,0 +1,45 @@
+aside{
+    position: fixed;
+    top: 60px;
+    width: 17%;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#sideBar{
+    width: 100%;
+    background: var(--background-gray);
+    color: white;
+    
+}
+
+#sideBar > .section{
+    padding-top: 10px;
+    padding-right: 10px;
+    border-bottom: 3px solid var(--border-gray);
+}
+#sideBar > .section > .item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 0px;
+    padding-left: 20px;
+}
+.subscriptions > .item > .icon > img{
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+#sideBar > .section > .item:hover{
+    background-color: var(--hover-background-color);
+}
+.footer{
+    object-fit: cover;
+}
+.footer > .item{
+    width: 100%;
+    height: auto;
+    padding: 0px !important;
+}
