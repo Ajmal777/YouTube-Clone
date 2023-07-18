@@ -156,7 +156,7 @@ async function fetchVideoDetails(temp_videoId){
 
 function openVideo(VIDEO_ID){
     localStorage.setItem('videoId', VIDEO_ID);
-    window.open('/videoDetails.html');
+    window.open('videoDetails.html');
 }
 
 fetchVideoDetails_videoDetails(videoId);
