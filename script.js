@@ -74,7 +74,7 @@ function renderVideos(data){
 
 function openVideo(videoId){
     localStorage.setItem('videoId', videoId);
-    window.open('/videoDetails.html');
+    window.open('videoDetails.html');
 }
 
 function search(){
